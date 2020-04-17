@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popup-form">
+      <button class="close" onclick="hidePopUp()">Close</button>
+      <form>
+        <label class="form-title" for="title"><b>Book Title</b></label>
+        <input type="text" name="title" placeholder="Enter title" required />
+        <label class="form-title" for="author"><b>Author</b></label>
+        <input type="text" name="author" required placeholder="Enter author" />
+
+        <label class="form-title" for="pages"><b>Number of Pages</b></label>
+        <input type="number" name="pages" />
+
+        <p class="form-question-text">Have you read this book ?</p>
+        <label for="isRead"><b>Yes</b></label>
+        <input type="radio" name="isRead" id="isRead" />
+        <label for="isRead"><b>No</b></label>
+        <input type="radio" name="isRead" id="isNotRead" />
+        <button class="new-book-button">Submit</button>
+      </form>
+    </div>
+    <main class="main">
+      <h1>Javascript Book Library</h1>
+      <button class="new-book" id="newBook" onclick="showPopUp()">
+        New book
+      </button>
+      <div class="library-container"></div>
+      <script src="Library.js"></script>
+    </main>
+  </body>
+</html>
